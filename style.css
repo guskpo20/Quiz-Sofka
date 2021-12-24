@@ -59,7 +59,7 @@ li{
     background-color: green;
     font-weight: bold;
     color: white;
-    font-size: 1.5rem;
+    font-size: 100%;
     width: 50%;
     padding: 1.3rem;
     border-style: none;
@@ -76,7 +76,7 @@ li{
     background-color: rgb(146, 0, 0);
     font-weight: bold;
     color: white;
-    font-size: 1.5rem;
+    font-size: 100%;
     width: 50%;
     padding: 1.3rem;
     border-style: none;
@@ -92,8 +92,8 @@ li{
 .restart{
     background-color: gray;
     font-weight: bold;
-    color: black;
-    font-size: 1.5rem;
+    color: white;
+    font-size: 100%;
     width: 50%;
     padding: 1.3rem;
     border-style: none;
@@ -102,6 +102,7 @@ li{
 
 .restart:hover{
     background-color: rgb(255, 254, 254);
+    color: black;
 }
 
 .botones{
@@ -114,8 +115,8 @@ li{
 .restartHighscore{
     background-color: rgb(117, 70, 70);
     font-weight: bold;
-    color: black;
-    font-size: 1.5rem;
+    color: white;
+    font-size: 100%;
     width: 50%;
     padding: 1.3rem;
     border-style: none;
@@ -124,4 +125,5 @@ li{
 
 .restartHighscore:hover{
     background-color: rgb(209, 124, 124);
+    color: black;
 }
