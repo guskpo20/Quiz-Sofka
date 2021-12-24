@@ -240,12 +240,22 @@ function getSelected(){
             answer = answersEl.id;
         }
     });
+
     
     return answer;
 }
 
 botonSiguiente.addEventListener("click", () => {
     const answer = getSelected();
+
+    const answersEls = document.querySelectorAll('input.answer');
+
+    answersEls.forEach((answersEl) =>{
+        if(answersEl.checked){
+            answersEl.checked = false;
+        }
+    });
+    
 
     if(answer){
         let quizData = preguntas[index];
