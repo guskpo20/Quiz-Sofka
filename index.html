@@ -4,16 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Trivia</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-
-    </header>
-
     <section class="quiz">
         <div class="carta">
+            
             <div class="textos">
                 <h2 id="pregunta">Pregunta</h2>
                 <ul>
@@ -22,9 +19,24 @@
                     <li><input class="opciones answer" type="radio" id="c" name="answer"/><label id="c_text" for="c">Respuesta c</label></li>
                     <li><input class="opciones answer" type="radio" id="d" name="answer"/><label id="d_text" for="d">Respuesta d</label></li>
                 </ul>
-
+                
+                
             </div>
-            <button id="btnSig" class="siguiente">Siguiente</button>
+
+            <div class="puntuaciones">
+                <h3 class="puntos" id="puntos">Puntos:</h3>
+                <h3 class="highscore" id="highscore">Highscore:</h3>
+            </div>
+
+            <div class="botones">
+                <button id="btnSig" class="siguiente">Siguiente</button>
+                <button id="btnExt" class="exit">Salir</button>
+            </div>
+            <div class="botones">
+                <button id="btnRes" class="restart">Volver a Empezar</button>
+                <button id="btnResHis" class="restartHighscore">Borrar Highscore</button>
+            </div>
+            
         </div>
     </section>
 
