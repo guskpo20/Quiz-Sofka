@@ -200,7 +200,8 @@ const botonRestart = document.getElementById('btnRes')
 const puntos = document.getElementById('puntos')
 const highScore = document.getElementById('highscore')
 const resetHigh = document.getElementById('btnResHis')
-
+const radioButtons = document.querySelectorAll('input[name="answer"]')
+let pastRadioButtonId = undefined;
 
 let myHighScore = localStorage['HighScore']
 let answer = undefined;
@@ -215,6 +216,19 @@ if(myHighScore){
 }else{
     myHighScore = "0"
     highScore.innerText = "Highscore: " + myHighScore
+}
+
+desCheckedAll()
+
+function desCheckedAll(){
+    for (const radioButton of radioButtons) {
+        let id = radioButton.id;
+        document.getElementById(id).parentNode.classList.toggle("checked")
+    }
+}
+
+function desChecked(id){
+    document.getElementById(id).parentNode.classList.toggle("checked");
 }
 
 
@@ -238,6 +252,7 @@ function getSelected(){
     answersEls.forEach((answersEl) =>{
         if(answersEl.checked){
             answer = answersEl.id;
+            //console.log(document.getElementById(answer).parentNode);
         }
     });
 
@@ -255,6 +270,11 @@ botonSiguiente.addEventListener("click", () => {
             answersEl.checked = false;
         }
     });
+
+    if(pastRadioButtonId != undefined){
+        desChecked(pastRadioButtonId)
+        pastRadioButtonId = undefined;
+    }
     
 
     if(answer){
@@ -305,3 +325,25 @@ resetHigh.addEventListener("click",()=>{
     localStorage['HighScore'] = puntuacion.toString();
     highscore.innerText = "Highscore: " + puntuacion
 })
+
+/*radioButtons.addEventListener('change', function(e){
+    if(this.checked){
+        let id = this.id;
+        console.log(document.getElementById(id).parentNode); 
+    }
+})*/
+
+for (const radioButton of radioButtons) {
+    radioButton.addEventListener('change', showSelected);
+}
+
+function showSelected(e){
+    if(pastRadioButtonId != undefined){
+        desChecked(pastRadioButtonId)
+    }
+    let id = this.id;
+    if(pastRadioButtonId != id){
+        document.getElementById(id).parentNode.classList.toggle("checked");
+        pastRadioButtonId = id;
+    }
+}

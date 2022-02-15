@@ -5,7 +5,17 @@
 }
 
 .quiz{
-    background-color: rgb(255, 255, 255);
+    /*background: url(https://i.pinimg.com/564x/ff/f9/f2/fff9f29b4953cd3eda0a4fa2b4cee6af.jpg) no-repeat center center fixed;*/
+    /*background: url(https://i.pinimg.com/564x/78/6b/6e/786b6ea6f92cea86b66f722a1391b250.jpg) no-repeat center center fixed;*/
+    /*background: url(https://wallpapercave.com/wp/A75WTwr.jpg) no-repeat center center fixed;*/
+    /*background: url(https://data.1freewallpapers.com/download/net-neon-shape-pointed-dark-blue.jpg) no-repeat center center fixed;*/
+    /*background: url(https://media.istockphoto.com/photos/futuristic-scifi-abstract-blue-and-purple-neon-light-shapes-on-black-picture-id990096688?k=20&m=990096688&s=170667a&w=0&h=uFWTK7FZCeK8PP9-zI9gM2W0IuRH8AnC3rvy5t0N8M8=) no-repeat center center fixed;  2do mas me convence */
+    /*background: url(https://media.istockphoto.com/illustrations/futuristic-scifi-abstract-blue-and-purple-neon-light-shapes-on-black-illustration-id1050634384?k=20&m=1050634384&s=170667a&w=0&h=modaCstYy1MGRRweb7DOqAspU-NPFYM0qObwtZJhzSg=) no-repeat center center fixed;*/
+    /*background: url(https://i.pinimg.com/originals/50/53/ef/5053efb5820a2f567da5f9a5eec65926.jpg) no-repeat center center fixed; ESTE ES EL QUE MAS ME CONVENCE */
+    background: url(https://i.pinimg.com/originals/50/53/ef/5053efb5820a2f567da5f9a5eec65926.jpg) no-repeat center center fixed;
+    /*background: url(https://wallpaper-mania.com/wp-content/uploads/2018/09/High_resolution_wallpaper_background_ID_77700387744.jpg) no-repeat center center fixed;*/
+    background-size: cover;
+    /*background-color: rgb(0, 162, 255);*/
     display: flex;
     align-items: center;
     justify-content: center;
@@ -14,14 +24,15 @@
 }
 
 .carta{
-    background-color: rgb(139, 143, 142);
+    background-color: black;
+    color: white;
     width: 800px;
     max-width: 60%;
     display: flex;
     flex-direction: column;
     align-items: center;
     border-radius: 20px;
-    box-shadow: 0 0 1rem 5px rgba(0, 0, 0, 1);
+    box-shadow: 0 0 1rem 5px rgb(0, 162, 255);
     overflow: hidden;
 }
 
@@ -42,7 +53,7 @@ ul{
 li{
     padding: 0.5rem 0;
     cursor: pointer;
-    color: black;
+    color: white;
     font-weight: bold;
     font-size: 1.5rem;
 }
@@ -64,7 +75,7 @@ li:hover{
 }
 
 .siguiente{
-    background-color: rgb(1, 95, 158);
+    background-color: rgb(1, 1, 173);
     font-weight: bold;
     color: white;
     font-size: 100%;
@@ -74,43 +85,46 @@ li:hover{
     border-top-left-radius: 1rem;
     margin-top: 2rem;
     cursor: pointer;
+    /*box-shadow: 0 0 1rem 5px rgb(0, 162, 255);*/
 }
 
 .siguiente:hover{
-    background-color: rgb(0, 160, 252);
+    background-color: rgb(0, 26, 255);
 }
 
 .exit{
-    background-color: rgb(146, 0, 0);
+    background-color: rgb(189, 0, 189);
     font-weight: bold;
     color: white;
     font-size: 100%;
     width: 50%;
     padding: 1.3rem;
-    border-style: none;
     border-top-right-radius: 1rem;
     margin-top: 2rem;
     cursor: pointer;
+    border: none;
+    /*box-shadow: 0 0 1rem 5px rgb(250, 101, 250);*/
+    /*box-shadow: 0 0 1rem 5px rgb(0, 162, 255);*/
 }
 
 .exit:hover{
-    background-color: red;
+    background-color: rgb(225, 0, 255);
 }
 
 .restart{
-    background-color: gray;
+    background-color: rgb(189, 0, 189);
     font-weight: bold;
     color: white;
     font-size: 100%;
     width: 50%;
     padding: 1.3rem;
-    border-style: none;
     cursor: pointer;
+    border: none;
+    /*box-shadow: 0 0 1rem 5px rgb(250, 101, 250);*/
 }
 
 .restart:hover{
-    background-color: rgb(255, 254, 254);
-    color: black;
+    background-color: rgb(225, 0, 255);
 }
 
 .botones{
@@ -121,7 +135,7 @@ li:hover{
 }
 
 .restartHighscore{
-    background-color: rgb(117, 70, 70);
+    background-color: rgb(1, 1, 173);
     font-weight: bold;
     color: white;
     font-size: 100%;
@@ -129,9 +143,14 @@ li:hover{
     padding: 1.3rem;
     border-style: none;
     cursor: pointer;
+    /*box-shadow: 0 0 1rem 1px rgb(0, 162, 255);*/
 }
 
 .restartHighscore:hover{
-    background-color: rgb(209, 124, 124);
-    color: black;
+    background-color: rgb(0, 26, 255);
+}
+
+.checked{
+    background-color: grey;
+    border-radius: 10px;
 }
