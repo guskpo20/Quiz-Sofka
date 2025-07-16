@@ -1,4 +1,4 @@
-# Ingles
+
 This is a quiz-style web application developed during a React course. The app presents users with a series of multiple-choice questions, tracks their score, and shows progress across different levels or stages.
 
 Features:
