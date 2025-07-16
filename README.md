@@ -11,7 +11,7 @@ Features:
 
 - Responsive design
 
-👉 Live demo: guskpo20.github.io/Quiz-Sofka
+👉 Live [demo](https://guskpo20.github.io/Quiz-Sofka)
 
 This project was part of a learning challenge inspired by Sofka Technologies to put into practice core web development concepts.
 
